@@ -5,7 +5,7 @@ for 2x2x2 mesh,
 define, a = (xhi-xlo,0,0); b = (xy,yhi-ylo,0); c = (xz,yz,zhi-zlo) as three lattice vector,
      and xlo=0.0, xhi=1.0, ylo=0.0, yhi=1.0, zlo=0.0, zhi=1.0, xy=0.0, xz=0.0, yz=0.0,
 then generate,
- vertex
+ vertex123
 Coordinates 27
   0.000000  0.000000  0.000000
   0.500000  0.000000  0.000000
