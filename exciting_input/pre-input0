@@ -1,0 +1,58 @@
+# pre-input for auto-generating <input.xml>
+-------------------------------------------------------------------------------------
+title = Diamond
+speciespath = /public/home/lyw/software/exciting/species
+ngridk = 8 8 8
+outputlevel = normal
+xctype = GGA_PBE_SOL
+rmt = None 2.03 4.5
+-------------------------------------------------------------------------------------
+ do = skip
+rgkmax = 6
+#nsmdos = 2
+#ngrdos = 300
+#nwdos = 1000
+#winddos = -0.3 0.3
+steps = 100
+-------------------------------------------------------------------------------------
+#nosym= false
+#reducek= true
+-------------------------------------------------------------------------------------
+#laser = trapCos
+#amplitude = 1.0d0
+#omega = 1.0d0
+#phase = 0.d0
+#t0 = 0.25d0
+#riseTime = 5.d0
+#width = 30.d0
+#direction = x
+-------------------------------------------------------------------------------------
+#laser = sinSq
+#amplitude = 1.d0
+#omega = 1.0d0
+#phase = 0.d0
+#t0 = 0.5d0
+#pulseLength = 5.d0
+#direction = y
+-------------------------------------------------------------------------------------
+#laser = kick
+#amplitude = 0.01d0
+#t0 = 1.d0
+#width = 0.1d0
+#direction = z
+-------------------------------------------------------------------------------------
+#xstype=RT-TDDFT
+#laser = kick sinSq trapCos
+#amplitude = 0.01d0 1.d0 1.0d0
+#t0 = 1.d0 0.5d0 0.25d0
+#width = 0.1d0 None 30.d0
+#direction = z y x
+#omega = None 1.0d0 1.0d0
+#phase = None 0.d0 0.d0
+#pulseLength = None 5.d0 None
+#riseTime = None None 5.d0
+--------------------------------------------------------------------------------------
+xstype=TDDFT
+qpoint =  |0.0 0.0 0.0 |0.0 0.0 0.0 |0.0 0.0 0.0 |0.0 0.0 0.0 |
+points = 400
+tevout = false
