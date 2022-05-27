@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<input>
+		<title>test1</title>
+		<structure speciespath="/public/home/lyw/software/exciting/species/">
+			<crystal scale="1.8897268777743552">
+				<basevect>8.5687999725   0.0   0.0</basevect>
+				<basevect>-4.2843999863   7.4207984562   0.0</basevect>
+				<basevect>0.0   0.0   26.0723991394</basevect>
+			</crystal>
+			<species speciesfile="Cs.xml" rmt="2.0">
+				<atom coord="0.666666687   0.333333343   0.880720019"/>
+				<atom coord="0.333333313   0.666666627   0.119280003"/>
+				<atom coord="0.0   0.0   0.0"/>
+			</species>
+			<species speciesfile="Sb.xml" rmt="1.38">
+				<atom coord="0.666666687   0.333333343   0.077179998"/>
+				<atom coord="0.333333313   0.666666627   0.922819972"/>
+			</species>
+			<species speciesfile="I.xml" rmt="1.93">
+				<atom coord="0.5   0.5   0.0"/>
+				<atom coord="0.5   0.0   0.0"/>
+				<atom coord="0.0   0.5   0.0"/>
+				<atom coord="0.344660014   0.172330007   0.135700002"/>
+				<atom coord="0.655339956   0.827669978   0.864300013"/>
+				<atom coord="0.827669978   0.172330007   0.135700002"/>
+				<atom coord="0.172330007   0.827669978   0.864300013"/>
+				<atom coord="0.827669978   0.655339956   0.135700002"/>
+				<atom coord="0.172330007   0.344660014   0.864300013"/>
+			</species>
+		</structure>
+		<groundstate ngridk="12 12 1" outputlevel="normal" xctype="HYB_HSE" epsengy="1.d-7" rgkmax="7" nempty="20" do="skip">
+			<Hybrid excoeff="0.25" omega="0.11"/>
+		</groundstate>
+		<properties>
+			<momentummatrix/>
+			<shg wmax="0.3" wgrid="400" swidth="0.008" etol="1.d-4" tevout="true">
+				<chicomp>1 2 3</chicomp>
+			</shg>
+		</properties>
+	</input>

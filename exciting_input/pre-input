@@ -1,0 +1,7 @@
+wmax = 0.3
+wgrid = 400
+swidth = 0.008
+etol = 1.d-4
+tevout = true
+chicomp = 1 2 3
+do = skip
